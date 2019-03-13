@@ -194,13 +194,17 @@ a:focus {
 	flex-direction: column;
 	align-items: stretch;
 	text-align: center;
-	font-size: 6vh;
-	font-family: "consolas", sans-serif;
-	letter-spacing: -4px;	
+	font-size: 5vh;
+	font-family: berlingskeserif,"consolas", sans-serif;
+	letter-spacing: 1px;	
 }
-.menu span {
-	/* letter-spacing: 0px; */
+.menu-hashtags {
+	letter-spacing:0;
+	font-size:1.3rem; 
+	color:blue;
+	font-family: Futura, 'Nunito Sans', sans-serif;
 }
+
 
 .demo-2 .menu {
 	line-height: 1.5;
