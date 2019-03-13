@@ -196,13 +196,14 @@ a:focus {
 	text-align: center;
 	font-size: 5vh;
 	font-family: berlingskeserif,"consolas", sans-serif;
-	letter-spacing: 1px;	
+	letter-spacing: 1px;
+	text-align: left;	
 }
 .menu-hashtags {
 	letter-spacing:0;
 	font-size:1.3rem; 
 	color:blue;
-	font-family: Futura, 'Nunito Sans', sans-serif;
+	font-family: "Maax", Futura, 'Nunito Sans', sans-serif;
 }
 
 
