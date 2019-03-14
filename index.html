@@ -4,70 +4,70 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Tommy Jaks Design</title>
-		<meta name="description" content="Some distortion hover effects on images using SVG filters." />
-		<meta name="keywords" content="distortion, svg filter, hover, image, effect, web, javascript" />
-		<meta name="author" content="Codrops" />
-		<link rel="shortcut icon" href="favicon.ico">
+		<meta name="description" content="Tommy Jaks Digital Designer Portfolio" />
+		<meta name="author" content="Tommy Jaks" />
+		<link rel="shortcut icon" href="favicon.png">
 		<link href="https://fonts.googleapis.com/css?family=Cardo|Nunito+Sans" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
 		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
 	</head>
 	<body class="demo-1">
 		<main>
 			<div class="frame">
 				<div class="frame__title-wrap">
-					<!-- <h1 class="frame__title">Image Distortion Effects with SVG Filters</h1> -->
-					<!-- <div class="frame__links">
-						<a href="https://tympanus.net/Development/TextTrailEffect/">Previous Demo</a>
-						<a href="https://tympanus.net/codrops/?p=38971">Article</a>
-						<a href="https://github.com/codrops/SVGImageHover/">GitHub</a>
-					</div> -->
+				<h2 class="frame__title">5 years of digital craftmanship.</h2>
 				</div>
 				<div class="frame__demos">
-					<a href="index.html" class="frame__demo frame__demo--current">Start</a>
-					<a href="#" class="frame__demo">About Me</a>
-					<!-- <a href="index3.html" class="frame__demo">Effect 3</a> -->
+					<!--<a href="index.html" class="frame__demo frame__demo&#45;&#45;current">Start</a>-->
+					<!--<a href="#" class="frame__demo">About Me</a>-->
+					<a target="_blank" href="https://www.linkedin.com/in/tommyjaks/">
+						<img class="profile-image" src="img/0.jpeg"/>
+					</a>
 				</div>
 				<div class="frame__credits">
 					<h4 class="frame__heading">Tommy Jaks</h4>
-					<span class="frame__text">Passionated Digital Product Designer<br/>
+					<span class="frame__text" style="margin: 2rem 0;">Passionated Digital Product Designer<br/>
 						based in Stockholm.</span>
-						<h4 class="frame__heading">My name is Tommy, I am passionate about creating the best experiences on the web with a combination of design and code.
-							Scroll down to see my selected work.</h4>
-							<img style="width:500px; margin-top:1rem;" src="img/profil-glitch.gif"/>
+					<img class="profile-glitch" src="img/profil-glitch.gif"/>
+						<h4 class="frame__heading">I love creating the best experiences on the web with a combination of design and code.<br/>
+							<span style="color:#000;">Check out my selected work.</span></h4>
+
 				</div>
 				<div class="frame__contact">
 					<h4 class="frame__heading">Contact</h4>
-					<span class="frame__text">hello@tommyjaks.com</span>
+					<a href="mailto:hello@tommyjaks.com" class="frame__text">hello@tommyjaks.com</a>
 					<span class="frame__text">+46 79 - 31 33 747</span>
 				</div>
 				<div class="frame__photography">Selected work</div>
 				</div>
 			</div>
 			<div class="content">
-				<svg class="distort" width="350" height="450" viewBox="0 0 350 450">
+				<svg class="distort" height="450" width="350" viewBox="0 0 350 450">
 					<filter id="distortionFilter">
 						<feTurbulence type="turbulence" baseFrequency="0.07 0.01" numOctaves="5" seed="2" stitchTiles="stitch" x="0%" y="0%" width="100%" height="100%" result="noise"/>
 						<feDisplacementMap in="SourceGraphic" in2="noise" scale="0" xChannelSelector="R" yChannelSelector="B" x="0%" y="0%" width="100%" height="100%" filterUnits="userSpaceOnUse"/>
 					</filter>
 					<g filter="url(#distortionFilter)">
-						<image class="distort__img" x="50" y="50" xlink:href="img/1.jpg" height="350" width="250"/>
-						<image class="distort__img" x="50" y="50" xlink:href="img/2.jpg" height="350" width="250"/>
-						<image class="distort__img" x="50" y="50" xlink:href="img/3.jpg" height="350" width="250"/>
-						<image class="distort__img" x="50" y="50" xlink:href="img/4.jpg" height="350" width="250"/>
-						<image class="distort__img" x="50" y="50" xlink:href="img/5.jpg" height="350" width="250"/>
-						<image class="distort__img" x="50" y="50" xlink:href="img/6.jpg" height="350" width="250"/>
-						<image class="distort__img" x="50" y="50" xlink:href="img/7.jpg" height="350" width="250"/>
+						<image class="distort__img" x="50" y="50" xlink:href="img/1.png" height="450" width="350"/>
+						<image class="distort__img" x="50" y="50" xlink:href="img/2.png" height="450" width="350"/>
+						<image class="distort__img" x="50" y="50" xlink:href="img/3.jpg" height="450" width="350"/>
+						<image class="distort__img" x="50" y="50" xlink:href="img/4.png" height="450" width="350"/>
+						<image class="distort__img" x="50" y="50" xlink:href="img/5.png" height="450" width="350"/>
+						<image class="distort__img" x="50" y="50" xlink:href="img/6.png" height="450" width="350"/>
+						<image class="distort__img" x="50" y="50" xlink:href="img/7.jpg" height="450" width="350"/>
+						<image class="distort__img" x="50" y="50" xlink:href="img/8.png" height="450" width="350"/>
 					</g>
 				</svg>
 				<nav class="menu">
-					<a href="https://www.smartbokr.com" target="_blank" class="menu__link">refitness <span class="menu-hashtags">#UI/UX</span></a>
-					<a href="https://www.smartbokr.com" target="_blank"  class="menu__link">smartbokr_webb <span class="menu-hashtags">#UI/UX#Development#ES6#CMS</span></a>
-					<a href="https://inhouse.smartbokr.com" target="_blank"  class="menu__link">smarBokr_App <span class="menu-hashtags">#UI/UX#Animations#React.js</span></a>
-					<a href="https://www.quedro.com" target="_blank"  class="menu__link">quedro_webb<span class="menu-hashtags">#UI/UX#Development#ES6#CMS</span></a>
-					<a href="https://www.quedro.com" target="_blank"  class="menu__link">quedro_CRM<span class="menu-hashtags">#UI/UX#Frontend#Angular</span></a></a>
-					<a href="https://www.nordea.se" target="_blank"  class="menu__link">nordea <span class="menu-hashtags">#Frontend Developer#ES6#jQuery</span</a>
-					<a href="http://www.nookstockholm.com" class="menu__link">nookstockholm <span class="menu-hashtags">#UI/UX#Development#jQuery#CMS</span></a>
+					<a href="https://projects.invisionapp.com/prototype/refitness-cjsiv097m00c0ov01gr7agn1x" target="_blank" class="menu__link">refitness <span class="menu-hashtags">#UI/UX</span><i class="icon-share-alt"></i></a>
+					<a href="https://www.smartbokr.com" target="_blank"  class="menu__link">smartbokr <span class="menu-hashtags">#UI/UX#Development#ES6#CMS</span><i class="icon-share-alt"></i></a>
+					<a href="https://inhouse.smartbokr.com" target="_blank"  class="menu__link">smartbokr-App <span class="menu-hashtags">#UI/UX#Animations#React.js</span><i class="icon-share-alt"></i></a>
+					<a href="https://www.quedro.com" target="_blank"  class="menu__link">quedro<span class="menu-hashtags">#UI/UX#Development#ES6#CMS</span><i class="icon-share-alt"></i></a>
+					<a href="https://www.quedro.com" target="_blank"  class="menu__link">quedroCRM<span class="menu-hashtags">#UI/UX#Frontend#Angular</span><i class="icon-share-alt"></i></a>
+					<a href="https://www.nordea.se" target="_blank"  class="menu__link">nordea<span class="menu-hashtags">#Frontend#ES6#jQuery</span><i class="icon-share-alt"></i></a>
+					<a href="http://www.nookstockholm.com"  target="_blank" class="menu__link">nookstockholm<span class="menu-hashtags">#UI/UX#Development#jQuery#CMS</span><i class="icon-share-alt"></i></a>
+					<a href="http://www.vinoteket.se"  target="_blank" class="menu__link">vinoteket<span class="menu-hashtags">#E-commerce#Frontend#jQuery#C#.NET</span><i class="icon-share-alt"></i></a>
 				</nav>
 			</div>
 		</main>
