@@ -33,11 +33,6 @@ a:active, a:hover {
     outline: 0;
 }
 
-h1 {
-    font-size: 2em;
-    margin: 0.67em 0;
-}
-
 abbr[title] {
     border-bottom: 1px dotted;
 }
@@ -183,14 +178,18 @@ table {
 body {
     --color-text: #272222;
     --color-bg: #fff;
-    --color-link: #e2af68;
-    --color-link-hover: blue;
+    --color-link: blue;
+    --color-link-hover: darkblue;
     --color-content-link: #000;
     --color-content-link-hover: blue;
     --color-heading: #a7a7a7;
     --font-content: Cardo;
     color: var(--color-text);
     background-color: var(--color-bg);
+    font-family: Circular, "Europa-Regular", 'Nunito Sans', sans-serif;
+}
+
+h1 {
     font-family: Circular, "Europa-Regular", 'Nunito Sans', sans-serif;
 }
 
@@ -217,7 +216,7 @@ body {
     --font-content: Prata;
 }
 
-/* Page Loader */
+/* Page Loader
 .js .loading::before {
     content: '';
     position: fixed;
@@ -243,14 +242,14 @@ body {
     opacity: 0.4;
     background: var(--color-link);
     animation: loaderAnim 0.7s linear infinite alternate forwards;
-}
+} */
 
-@keyframes loaderAnim {
+/* @keyframes loaderAnim {
     to {
         opacity: 1;
         transform: scale3d(0.5, 0.5, 1);
     }
-}
+} */
 
 a {
     text-decoration: none;
@@ -275,7 +274,7 @@ a:focus {
     padding: 3rem 5vw;
     text-align: left;
     position: relative;
-    z-index: 1000;
+    z-index: 100;
 }
 
 .frame__title {
@@ -303,7 +302,8 @@ a:focus {
 }
 
 .frame__demos {
-    margin: 1rem 0;
+	margin: 1rem 0;
+	position: relative;
 }
 
 .frame__demo--current,
@@ -365,17 +365,34 @@ a:focus {
     margin: 1rem auto;
     display: none;
 }
+.profile-link:hover .profile-image__linkedin {
+	opacity: .8;
+	transition: all .2s ease-in;
+} 
+
+.profile-link:hover .profile-image {
+    box-shadow: 0px 5px 15px #bbb;
+	transition: all .2s ease-in-out;
+}
 
 .profile-image {
     width: 40px;
     height: 40px;
-    border-radius: 100%;
+	border-radius: 100%;
 }
 
-.profile-image:hover {
-    box-shadow: 0px 5px 15px #bbb;
-    transition: all .2s ease-in-out;
+.selected-work {
+	color:#000;margin-bottom: 2rem;
 }
+
+.profile-image__linkedin {
+	width: 25px;
+    position: absolute;
+    top: 7px;
+	left: 7px;
+	opacity: 0;
+}
+
 .icon-share-alt {
     font-size: 1rem;
     -webkit-text-stroke: 0px black!important;
@@ -390,13 +407,14 @@ a:focus {
     font-family: berlingskeserif, "consolas", sans-serif;
     letter-spacing: 1px;
     text-align: left;
+    z-index: 10;
 }
 
 .menu-hashtags {
     -webkit-text-stroke: 0px black!important;
     letter-spacing: 0;
     font-size: 1.2rem;
-    color: blue;
+	color: blue;
     font-family:"consolas",'Nunito Sans', sans-serif;
 }
 
@@ -410,6 +428,7 @@ a:focus {
         display: none;
     }
     .content__mobile {
+        opacity: 0;
         display: block;
     }
     .icon-share-alt{
@@ -442,7 +461,7 @@ a:focus {
     max-width: 1200px;
     margin: 0 auto;
     font-size: 2rem;
-    z-index: 999;
+    z-index: 101;
     font-weight: normal;
 }
 
@@ -460,7 +479,7 @@ a:focus {
 
 .menu__link,
 .quote__link {
-    z-index: 999;
+    z-index: 101;
     color: var(--color-content-link);
     position: relative;
     white-space: nowrap;
@@ -489,6 +508,11 @@ a:focus {
     top: calc(100% - 0.25rem);
     border-color: currentColor;
 }
+.frame__credits {
+    z-index: 151;
+    display: block;
+    position: relative;
+}
 
 @media screen and (min-width: 53em) {
     body {
@@ -502,7 +526,7 @@ a:focus {
     .frame {
         position: fixed;
         text-align: left;
-        z-index: 10000;
+        z-index: 100;
         top: 0;
         left: 0;
         display: grid;
@@ -536,6 +560,7 @@ a:focus {
     }
 
     .frame__credits {
+        z-index: 1001;
         grid-area: credits;
     }
 
